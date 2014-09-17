@@ -1,0 +1,29 @@
+body{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.jumbotron {
+height: 400px;
+width: auto;
+padding-top: 10px;
+padding-left: 15px;
+background-image: url(../assets/classroom.jpg);
+background-repeat: no-repeat;
+background-position: center;
+color: black;
+}
+
+.wrapText{
+	margin-right: 10px;
+	float:left;
+	margin-bottom: 5px;
+	border: solid black 1px;
+	padding: 2px;
+}
+
+.signin{
+	width:100px;
+	height:100px;
+
+}

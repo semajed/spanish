@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app="spanishClass" ng-controller="mainCtrl">
+<head>
+
+		<title>Spanish Class</title>
+		<meta name = "viewport" content ="width=device-width, initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<!-- <link href = "css/styles.css" rel = "stylesheet"> -->
+		<link href = "css/styling.css" rel="stylesheet">
+		
+
+</head>
+
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+
+		<a class="navbar-brand" href="/spanish/#/home">Ms. Dia's Class</a>
+		
+
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<div class="collapse navbar-collapse navHeaderCollapse">
+		
+			<ul class="nav navbar-nav navbar-right">
+				<li class=""><a href="/spanish/#/home">Home</a></li>
+				<li class=""><a href="/spanish/#/contactme">Contact Me</a></li>
+				<li class=""><a href="/spanish/#/teacherinfo">Teacher Info</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div ng-view>	
+<!-- Content from each page goes here -->
+</div>
+
+
+
+
+
+
+<div class = "navbar navbar-inverse navbar-fixed-bottom">
+			
+		<div class = "container">
+			<p class = "navbar-text pull-left">Site built by James Dayhuff with Bootstrap version 3.0</p>
+			<a class = "navbar-text pull-right" data-toggle="modal" href="#myModal">Sign in</a>
+		</div>
+
+</div>
+
+<!-- Sign in modal -->
+		<div class="modal fade" id="myModal">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title">Teacher Sign-in</h4>
+		      </div>
+			      <div class="modal-body">
+			        
+			      	<div class="input-group">
+					  <span class="input-group-addon">Username:</span>
+					  <input type="text" class="form-control">
+					</div>
+
+					<br>
+
+					<div class="input-group">
+					  <span class="input-group-addon">Password:</span>
+					  <input type="password" class="form-control">
+					</div>
+
+			      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Sign in</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+	<script src = "http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src = "src/bootstrap.js"></script>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-route.js"></script>
+	<script type = "text/javascript" src="src/routes.js"></script>
+
+	<!-- imported stuff START -->
+  <meta charset="utf-8">
+    <meta name="distributor" content="Global" />
+    <meta itemprop="contentRating" content="General" />
+    <meta name="robots" content="All" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="description" content="The source of truly unique and awesome jquery plugins." />
+    <meta name="keywords" content="slider, carousel, responsive, swipe, one to one movement, touch devices, jquery, plugin, bootstrap compatible, html5, css3" />
+    <meta name="author" content="w3widgets.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- Respomsive slider -->
+    <link href="css/responsive-calendar.css" rel="stylesheet">
+<!-- imported stuff END -->
+</body>
+</html>
+
