@@ -1,4 +1,4 @@
-var spanishclass = angular.module('spanishclass',['ngRoute'])
+angular.module('spanishclass',['ngRoute'])
 .config(function ($routeProvider) {
 	$routeProvider
 		.when('/home', {
@@ -12,16 +12,24 @@ var spanishclass = angular.module('spanishclass',['ngRoute'])
 		.when('/teacherinfo', {
 			templateUrl: 'views/teacher.html',
 			controller: 'mainController'
-		}).when('/docsTEMPLATE', {
+		})
+		.when('/courseOptions', {
+			templateUrl: 'views/courseOptions.html',
+			controller: 'courseOptionsCtrl'
+		})
+		.when('/docsTEMPLATE', {
 			templateUrl: 'views/docsTEMPLATE.html',
 			controller: 'mainController'
-		}).when('/newsTEMPLATE', {
+		})
+		.when('/newsTEMPLATE', {
 			templateUrl: 'views/newsTEMPLATE.html',
 			controller: 'mainController'
-		}).when('/docsTEMPLATE', {
+		})
+		.when('/docsTEMPLATE', {
 			templateUrl: 'views/docsTEMPLATE.html',
 			controller: 'mainController'
-		}).otherwise({
+		})
+		.otherwise({
 			template: "Page does not exist"
 		});
 });
