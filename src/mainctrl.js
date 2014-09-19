@@ -1,14 +1,27 @@
-
 function mainController ($scope, $location, $rootScope){
+	
+	
 
-		$scope.navigateTo = function (url){
-			$location.path(url);
-			$scope.currentPage = url;
+	$scope.course = {
+		'name': "",
+		'description': ""
+	}
+
+	$scope.navigateTo = function (url, course){
+		$location.path(url);
+		$scope.currentPage = url;
+		$scope.course.name = course;
+	}
+
+	$scope.isOpen = false;
+	$scope.toggle = function(){
+		if($scope.isOpen = false){
+			$scope.isOpen = true;
+			$('#myModal').show();
+		}else{
+			$scope.isOpen = false;
+			$('#myModal').hide();
 		}
+	}
 
-		$scope.ctrlSetup = function(){
-			$scope.currentPage = '/home';
-		}
-
-		$scope.ctrlSetup();
 };

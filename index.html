@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="spanishclass">
+<html ng-app="spanishclass" ng-controller="mainController">
 <head>
 		<title>Spanish Class</title>
 		<meta name = "viewport" content ="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 		<link href = "css/styling.css" rel="stylesheet">
 </head>
 
-<body ng-controller="mainController">
+<body>
 <div class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 
@@ -48,7 +48,7 @@
 			
 		<div class = "container">
 			<p class = "navbar-text pull-left">Site built by James Dayhuff with Bootstrap version 3.0</p>
-			<a class = "navbar-text pull-right" data-toggle="modal" href="#myModal">Sign in</a>
+			<a class = "navbar-text pull-right" data-toggle="modal" ng-click="toggle">Sign in</a>
 		</div>
 
 </div>
@@ -102,7 +102,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <!-- Respomsive slider -->
    <!--  <link href="css/responsive-calendar.css" rel="stylesheet"> -->
 <!-- imported stuff END -->
