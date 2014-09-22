@@ -1,6 +1,6 @@
-  $scope.signInFunction = function(username, password){
+  // $scope.signInFunction = function(username, password){
   
-    if(username == "kdee" && password == "abc123"){
-      $scope.admin = true;
-    }    
-  }
+  //   if(username == "kdee" && password == "abc123"){
+  //     $scope.admin = true;
+  //   }    
+  // }
